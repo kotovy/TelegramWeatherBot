@@ -30,7 +30,7 @@ def handle_weather(message):
         bot.send_message(message.chat.id, "Failed to get weather information. Please try again.")
 
 def get_weather(city: str) -> str:
-    api_key = "YouoOpenweathermapToken"
+    api_key = "YouOpenweathermapToken"
     api_url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}"
     
     try:
